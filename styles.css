@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0;
+  font-size: 96%;
+  text-transform: uppercase;
+}
+:root {
+  --green_nav: #65e190;
+  --white: #fff;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  font-family: "Poppins";
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: var(--green_nav);
+  padding: 0.8rem;
+  min-height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  margin: 0 1.6rem;
+  /* padding: 0 0.8rem; */
+  font-weight: 600;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+nav > hr {
+  width: 2px;
+  height: 30px;
+  border-width: 0;
+  background-color: black;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  padding: 0;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.nav-links:hover {
+  color: var(--white);
+  transition: 0.3s;
+  border-bottom: 2px solid black;
+}
+
+.projects {
+  background-color: black;
+  border: 5px solid black;
+  color: var(--green_nav);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+
+/* --------------------------------- */
+
+/* Banner */
+
+.box-image-banner {
+  height: 100%;
+}
+
+.background-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  background-image: url("./Images/banner.jpeg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.banner-text {
+  display: flex;
+  color: #fff;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.banner-text > p {
+  margin: 0 16rem;
+}
+.banner-text > p > strong {
+  color: var(--green_nav);
+}
+.background-img > button {
+  align-self: flex-end;
+  margin-right: 26%;
+  color: black;
+  background-color: var(--green_nav);
+  border-radius: 15px;
+  border-color: var(--green_nav);
+}
+/* ------------------------ */
+
+/* Importancia Fitness */
+.third-section {
+  margin: 3.8rem 0;
+  padding: 0 1.5rem;
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-column > h2 {
+  margin-bottom: 4%;
+  font-size: x-large;
+}
+
+.section-column > h2 > strong {
+  color: var(--green_nav);
+}
+
+.section-line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-line > p {
+  font-size: large;
+}
+.section-line > img {
+  width: 24rem;
+  height: 12rem;
+  border-radius: 20px;
+  border: solid 0.2rem var(--green_nav);
+  margin-right: 4%;
+}
+
+/* Inspiration background */
+
+.inspiration-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  background-image: url("./Images/banner2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+.inspiration-background > p {
+  color: var(--white);
+  font-size: x-large;
+  font-weight: 700;
+  text-shadow: 0px 0px 9px #000000;
+}
+.inspiration-background > p > strong {
+  color: var(--green_nav);
+}
+
+/* ----------------------------------------------- */
+
+/* Video coluna */
+.video-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+}
+
+.video-column > h2 {
+  font-size: x-large;
+  margin-bottom: 2rem;
+}
+.video-column > h2 > strong {
+  color: var(--green_nav);
+}
+
+/* --------------------------------------------------------- */
+
+/* Footer */
+
+.footer-column {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+}
+
+.footer-form {
+  background-color: var(--green_nav);
+  width: 60%;
+  height: 12rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-form > input {
+  width: 80%;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.footer-form > button {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  font-size: small;
+  padding: 0.5rem;
+}
+.footer-form > button:hover {
+  background-color: #e6e6e6;
+}
+
+.footer-line {
+  display: flex;
+  width: 58%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: var(--white);
+}
+.footer-line > p > a {
+  text-decoration: none;
+  color: var(--green_nav);
+}
+
+/* Butoes */
+
+button {
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
